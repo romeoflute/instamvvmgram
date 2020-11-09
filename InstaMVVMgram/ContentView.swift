@@ -13,7 +13,7 @@ struct ContentView: View {
             FeedView()
                 .tabItem {
                     Image(systemName: "house.fill")
-                    Text("First Tab")
+                    Text("Feed")
                 }
             SearchView()
                 .tabItem {
@@ -23,17 +23,17 @@ struct ContentView: View {
             AddPostView()
                 .tabItem {
                     Image(systemName: "plus.circle.fill")
-                    Text("+")
+                    Text("Add Post")
                 }
             NotificationsView()
                 .tabItem {
                     Image(systemName: "rectangle.fill.badge.checkmark")
-                    Text("+")
+                    Text("Notifications")
                 }
             ProfileView()
                 .tabItem {
                     Image(systemName: "person.circle.fill")
-                    Text("+")
+                    Text("Profile")
                 }
         }
     }
