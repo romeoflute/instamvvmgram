@@ -13,6 +13,11 @@
 		AD19C63A2558DBCE00DE7026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD19C6392558DBCE00DE7026 /* Assets.xcassets */; };
 		AD19C63D2558DBCE00DE7026 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD19C63C2558DBCE00DE7026 /* Preview Assets.xcassets */; };
 		AD19C6402558DBCE00DE7026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD19C63E2558DBCE00DE7026 /* LaunchScreen.storyboard */; };
+		AD32A7AD2559134D0009BF79 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD32A7AC2559134D0009BF79 /* FeedView.swift */; };
+		AD32A7B0255913590009BF79 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD32A7AF255913590009BF79 /* SearchView.swift */; };
+		AD32A7B32559142D0009BF79 /* AddPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD32A7B22559142D0009BF79 /* AddPostView.swift */; };
+		AD32A7B62559143D0009BF79 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD32A7B52559143D0009BF79 /* NotificationsView.swift */; };
+		AD32A7B9255914660009BF79 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD32A7B8255914660009BF79 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		AD19C63C2558DBCE00DE7026 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD19C63F2558DBCE00DE7026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD19C6412558DBCE00DE7026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD32A7AC2559134D0009BF79 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		AD32A7AF255913590009BF79 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		AD32A7B22559142D0009BF79 /* AddPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostView.swift; sourceTree = "<group>"; };
+		AD32A7B52559143D0009BF79 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		AD32A7B8255914660009BF79 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +69,6 @@
 				AD19C6482558DBD500DE7026 /* Model */,
 				AD19C6492558DBF200DE7026 /* View */,
 				AD19C64A2558DBFE00DE7026 /* ViewModel */,
-				AD19C64B2558DC0B00DE7026 /* Controller */,
 				AD19C64C2558DC1300DE7026 /* API */,
 				AD19C64D2558DC1D00DE7026 /* Utils */,
 				AD19C6332558DBCB00DE7026 /* AppDelegate.swift */,
@@ -91,6 +100,11 @@
 		AD19C6492558DBF200DE7026 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD32A7AC2559134D0009BF79 /* FeedView.swift */,
+				AD32A7AF255913590009BF79 /* SearchView.swift */,
+				AD32A7B22559142D0009BF79 /* AddPostView.swift */,
+				AD32A7B52559143D0009BF79 /* NotificationsView.swift */,
+				AD32A7B8255914660009BF79 /* ProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,13 +114,6 @@
 			children = (
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		AD19C64B2558DC0B00DE7026 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		AD19C64C2558DC1300DE7026 /* API */ = {
@@ -193,9 +200,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD32A7B9255914660009BF79 /* ProfileView.swift in Sources */,
+				AD32A7B0255913590009BF79 /* SearchView.swift in Sources */,
+				AD32A7AD2559134D0009BF79 /* FeedView.swift in Sources */,
 				AD19C6342558DBCB00DE7026 /* AppDelegate.swift in Sources */,
 				AD19C6362558DBCB00DE7026 /* SceneDelegate.swift in Sources */,
+				AD32A7B32559142D0009BF79 /* AddPostView.swift in Sources */,
 				AD19C6382558DBCB00DE7026 /* ContentView.swift in Sources */,
+				AD32A7B62559143D0009BF79 /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
