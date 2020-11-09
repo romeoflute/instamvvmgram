@@ -9,7 +9,13 @@ import SwiftUI
 
 struct NotificationsView: View {
     var body: some View {
-        Text("Hello, Notifications!")
+        NavigationView {
+            NavigationLink(destination: Text("Second View")) {
+                Text("Hello, Notifications!")
+            }
+            .navigationBarTitle("Activity")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 

@@ -9,7 +9,13 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        Text("Hello, Profile!")
+        NavigationView {
+            NavigationLink(destination: Text("Second View")) {
+                Text("Hello, Profile!")
+            }
+            .navigationBarTitle("meoflute")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 

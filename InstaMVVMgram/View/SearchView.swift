@@ -9,7 +9,13 @@ import SwiftUI
 
 struct SearchView: View {
     var body: some View {
-        Text("Hello, Search!")
+        NavigationView {
+            NavigationLink(destination: Text("Second View")) {
+                Text("Hello, Search!")
+            }
+            .navigationBarTitle("Search")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 

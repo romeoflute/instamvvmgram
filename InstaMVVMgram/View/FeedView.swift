@@ -9,7 +9,13 @@ import SwiftUI
 
 struct FeedView: View {
     var body: some View {
-        Text("Hello Feed!")
+        NavigationView {
+            NavigationLink(destination: Text("Second View")) {
+                Text("Hello, Feed!")
+            }
+            .navigationBarTitle("InstaMVVMgram")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 
