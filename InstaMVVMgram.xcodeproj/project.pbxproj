@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AD19C6342558DBCB00DE7026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19C6332558DBCB00DE7026 /* AppDelegate.swift */; };
 		AD19C6362558DBCB00DE7026 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19C6352558DBCB00DE7026 /* SceneDelegate.swift */; };
-		AD19C6382558DBCB00DE7026 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19C6372558DBCB00DE7026 /* ContentView.swift */; };
 		AD19C63A2558DBCE00DE7026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD19C6392558DBCE00DE7026 /* Assets.xcassets */; };
 		AD19C63D2558DBCE00DE7026 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD19C63C2558DBCE00DE7026 /* Preview Assets.xcassets */; };
 		AD19C6402558DBCE00DE7026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD19C63E2558DBCE00DE7026 /* LaunchScreen.storyboard */; };
@@ -18,13 +17,16 @@
 		AD32A7B32559142D0009BF79 /* AddPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD32A7B22559142D0009BF79 /* AddPostView.swift */; };
 		AD32A7B62559143D0009BF79 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD32A7B52559143D0009BF79 /* NotificationsView.swift */; };
 		AD32A7B9255914660009BF79 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD32A7B8255914660009BF79 /* ProfileView.swift */; };
+		AD32A7C22559774C0009BF79 /* PicsPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD32A7C12559774C0009BF79 /* PicsPicker.swift */; };
+		AD32A7CD255AB9890009BF79 /* TabContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD32A7CC255AB9890009BF79 /* TabContainerView.swift */; };
+		AD32A7D1255ABB0E0009BF79 /* TabContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD32A7D0255ABB0E0009BF79 /* TabContainerViewModel.swift */; };
+		AD32A7D5255ABB670009BF79 /* TabItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD32A7D4255ABB670009BF79 /* TabItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD19C6302558DBCB00DE7026 /* InstaMVVMgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaMVVMgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD19C6332558DBCB00DE7026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD19C6352558DBCB00DE7026 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD19C6372558DBCB00DE7026 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD19C6392558DBCE00DE7026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD19C63C2558DBCE00DE7026 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD19C63F2558DBCE00DE7026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +36,10 @@
 		AD32A7B22559142D0009BF79 /* AddPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostView.swift; sourceTree = "<group>"; };
 		AD32A7B52559143D0009BF79 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		AD32A7B8255914660009BF79 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AD32A7C12559774C0009BF79 /* PicsPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsPicker.swift; sourceTree = "<group>"; };
+		AD32A7CC255AB9890009BF79 /* TabContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerView.swift; sourceTree = "<group>"; };
+		AD32A7D0255ABB0E0009BF79 /* TabContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerViewModel.swift; sourceTree = "<group>"; };
+		AD32A7D4255ABB670009BF79 /* TabItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +79,6 @@
 				AD19C64D2558DC1D00DE7026 /* Utils */,
 				AD19C6332558DBCB00DE7026 /* AppDelegate.swift */,
 				AD19C6352558DBCB00DE7026 /* SceneDelegate.swift */,
-				AD19C6372558DBCB00DE7026 /* ContentView.swift */,
 				AD19C6392558DBCE00DE7026 /* Assets.xcassets */,
 				AD19C63E2558DBCE00DE7026 /* LaunchScreen.storyboard */,
 				AD19C6412558DBCE00DE7026 /* Info.plist */,
@@ -100,11 +105,12 @@
 		AD19C6492558DBF200DE7026 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AD32A7AC2559134D0009BF79 /* FeedView.swift */,
-				AD32A7AF255913590009BF79 /* SearchView.swift */,
-				AD32A7B22559142D0009BF79 /* AddPostView.swift */,
-				AD32A7B52559143D0009BF79 /* NotificationsView.swift */,
-				AD32A7B8255914660009BF79 /* ProfileView.swift */,
+				AD32A7CB255AB9700009BF79 /* Tab */,
+				AD32A7BC255976CE0009BF79 /* Feed */,
+				AD32A7C0255976F20009BF79 /* Search */,
+				AD32A7BF255976EC0009BF79 /* AddPost */,
+				AD32A7BE255976E80009BF79 /* Notifications */,
+				AD32A7BD255976E00009BF79 /* Profile */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,6 +118,7 @@
 		AD19C64A2558DBFE00DE7026 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AD32A7D3255ABB4F0009BF79 /* Tab */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -128,6 +135,64 @@
 			children = (
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		AD32A7BC255976CE0009BF79 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				AD32A7AC2559134D0009BF79 /* FeedView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		AD32A7BD255976E00009BF79 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AD32A7B8255914660009BF79 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AD32A7BE255976E80009BF79 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				AD32A7B52559143D0009BF79 /* NotificationsView.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		AD32A7BF255976EC0009BF79 /* AddPost */ = {
+			isa = PBXGroup;
+			children = (
+				AD32A7B22559142D0009BF79 /* AddPostView.swift */,
+				AD32A7C12559774C0009BF79 /* PicsPicker.swift */,
+			);
+			path = AddPost;
+			sourceTree = "<group>";
+		};
+		AD32A7C0255976F20009BF79 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AD32A7AF255913590009BF79 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AD32A7CB255AB9700009BF79 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				AD32A7CC255AB9890009BF79 /* TabContainerView.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		AD32A7D3255ABB4F0009BF79 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				AD32A7D0255ABB0E0009BF79 /* TabContainerViewModel.swift */,
+				AD32A7D4255ABB670009BF79 /* TabItemViewModel.swift */,
+			);
+			path = Tab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +269,12 @@
 				AD32A7B0255913590009BF79 /* SearchView.swift in Sources */,
 				AD32A7AD2559134D0009BF79 /* FeedView.swift in Sources */,
 				AD19C6342558DBCB00DE7026 /* AppDelegate.swift in Sources */,
+				AD32A7D1255ABB0E0009BF79 /* TabContainerViewModel.swift in Sources */,
+				AD32A7CD255AB9890009BF79 /* TabContainerView.swift in Sources */,
 				AD19C6362558DBCB00DE7026 /* SceneDelegate.swift in Sources */,
 				AD32A7B32559142D0009BF79 /* AddPostView.swift in Sources */,
-				AD19C6382558DBCB00DE7026 /* ContentView.swift in Sources */,
+				AD32A7D5255ABB670009BF79 /* TabItemViewModel.swift in Sources */,
+				AD32A7C22559774C0009BF79 /* PicsPicker.swift in Sources */,
 				AD32A7B62559143D0009BF79 /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
