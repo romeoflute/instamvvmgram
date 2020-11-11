@@ -8,8 +8,15 @@
 import Foundation
 
 class TabContainerViewModel: ObservableObject {
+    // private setter because no other object should be able to modify this
+    private (set) var previousSelectedTab: TabItemViewModel.TabItemType = .feed
+    @Published var selectedTab: TabItemViewModel.TabItemType = .feed {
+        didSet{
+            previousSelectedTab = oldValue
+            print("selectedTab is now: \(selectedTab)")
+        }
+    }
     
-    @Published var selectedTab: TabItemViewModel.TabItemType = .feed
     
     let tabItemViewModels:[TabItemViewModel] = [
         TabItemViewModel(imageName:"house.fill", title:"Feed", type: .feed),

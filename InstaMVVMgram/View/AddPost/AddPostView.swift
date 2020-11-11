@@ -8,20 +8,32 @@
 import SwiftUI
 
 struct AddPostView: View {
-    
-    @State var shouldShowActionSheet:Bool = true
+    @ObservedObject var tabContainerViewModel: TabContainerViewModel
+    @State var shouldShowActionSheet:Bool = false
     var body: some View {
         VStack{
             Text("Hello, Add Post View!")
-                .sheet(isPresented: $shouldShowActionSheet) {
+                .onAppear(){
+                    print("what is selectedTab? \(tabContainerViewModel.selectedTab)")
+                    if tabContainerViewModel.selectedTab == .addPost {
+                        shouldShowActionSheet = true
+                    }
+                }   
+                .sheet(isPresented: $shouldShowActionSheet, onDismiss: {
+                    // change back to previous tab selection
+                    self.tabContainerViewModel.selectedTab = self.tabContainerViewModel.previousSelectedTab
+                }) {
                     PicsPicker()
                 }
         }
+        
     }
 }
-
+/*
 struct AddPostView_Previews: PreviewProvider {
     static var previews: some View {
-        AddPostView(shouldShowActionSheet: true)
+        AddPostView(tabContainerViewModel: tabContainerViewModel, shouldShowActionSheet: true)
     }
 }
+ */
+ 

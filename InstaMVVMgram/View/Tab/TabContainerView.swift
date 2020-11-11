@@ -19,7 +19,7 @@ struct TabContainerView: View {
         case .search:
             SearchView()
         case .addPost:
-            AddPostView()
+            AddPostView(tabContainerViewModel: self.tabContainerViewModel)
         case .notifications:
             NotificationsView()
         case .profile:
@@ -36,7 +36,6 @@ struct TabContainerView: View {
                         Text(viewModel.title)
                     }
                     .tag(viewModel.type)
-                    
             }
         }
         .accentColor(.primary)
