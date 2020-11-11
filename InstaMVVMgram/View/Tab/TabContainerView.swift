@@ -39,6 +39,9 @@ struct TabContainerView: View {
             }
         }
         .accentColor(.primary)
+        .sheet(isPresented: $tabContainerViewModel.customActionTabSelected) {
+            PicsPicker()
+        }
     }
 }
 

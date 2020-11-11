@@ -8,14 +8,21 @@
 import Foundation
 
 class TabContainerViewModel: ObservableObject {
-    // private setter because no other object should be able to modify this
-    private (set) var previousSelectedTab: TabItemViewModel.TabItemType = .feed
+    
+    //tab with sheet that will not be selected
+    let customActionTab: TabItemViewModel.TabItemType = .addPost
+    
+    //selected tab
     @Published var selectedTab: TabItemViewModel.TabItemType = .feed {
         didSet{
-            previousSelectedTab = oldValue
-            print("selectedTab is now: \(selectedTab)")
+            if selectedTab == customActionTab {
+                customActionTabSelected = true
+                selectedTab = oldValue
+            }
         }
     }
+    
+    var customActionTabSelected: Bool = false
     
     
     let tabItemViewModels:[TabItemViewModel] = [

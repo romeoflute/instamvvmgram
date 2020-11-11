@@ -13,18 +13,6 @@ struct AddPostView: View {
     var body: some View {
         VStack{
             Text("Hello, Add Post View!")
-                .onAppear(){
-                    print("what is selectedTab? \(tabContainerViewModel.selectedTab)")
-                    if tabContainerViewModel.selectedTab == .addPost {
-                        shouldShowActionSheet = true
-                    }
-                }   
-                .sheet(isPresented: $shouldShowActionSheet, onDismiss: {
-                    // change back to previous tab selection
-                    self.tabContainerViewModel.selectedTab = self.tabContainerViewModel.previousSelectedTab
-                }) {
-                    PicsPicker()
-                }
         }
         
     }
