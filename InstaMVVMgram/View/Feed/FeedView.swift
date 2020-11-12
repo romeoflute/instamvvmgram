@@ -10,12 +10,20 @@ import SwiftUI
 struct FeedView: View {
     
     var body: some View {
-        NavigationView {
-            NavigationLink(destination: Text("Second View")) {
-                Text("Hello, Feed!")
+        GeometryReader { geometry in
+            NavigationView {
+                VStack{
+                    
+                    ScrollView() {
+                        VStack {
+                            NewsView()
+                            StoriesView()
+                        }
+                    }
+                }
+                .navigationBarTitle("InstaMVVM")
+                .navigationBarTitleDisplayMode(.inline)
             }
-            .navigationBarTitle("InstaMVVMgram")
-            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
