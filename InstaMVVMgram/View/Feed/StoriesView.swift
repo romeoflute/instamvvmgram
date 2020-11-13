@@ -40,6 +40,7 @@ struct StoriesView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 55)
+                            .padding(2)
                             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                             .overlay(
                                 Circle()
@@ -53,6 +54,7 @@ struct StoriesView: View {
                     .padding(.trailing, 12)
                 }
             }
+            .padding(.vertical, 8)
         }
     }
 }
